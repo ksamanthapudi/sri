@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Personal Portfolio Website – Hilary Present</title>
+        <link rel="icon" href="/images/portfolio.png" type="image/png">
+        <link rel="stylesheet" href="style.css">
+        <script src="https://kit.fontawesome.com/f53f5d2ec3.js" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
+    </head>
+    <body>
+    <div id="header">
+        <canvas id="background-canvas"></canvas>
+        <div class="container">
+            <nav>
+                <img src="" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#expertise">Expertise</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="Kavya_samanthapudi_Resume.pdf" download>Resume</a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <h1>I am <span>Kavya</span> Samanthapudi</h1>
+                <p>Data Analyst in Making </p>
+            </div>
+        </div>
+    </div>
+    <!-- -------------------about------------------- -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/kav.jpg">
+                    <img src="images/fix.jpeg">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p> Welcome! I'm Kavya Samanthapudi, holding an M.S. in Computer Science from Pace University. 
+                        After years of exploring data and uncovering insights, I’ve developed a passion for understanding the "why" behind problems and crafting impactful, data-driven solutions
+                        With a deep curiosity and drive to innovate, I aim to tackle complex challenges, continuously grow my skills, and create solutions that deliver tangible outcomes.
+                        My vision is to help organizations make smarter, evidence-based decisions by seamlessly blending technology and analytics.</p>
+                        
+                        <div class="tab-titles">
+                            <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                            <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                            <p class="tab-links" onclick="opentab('education')">Education</p>
+                            <!--<p class="tab-links" onclick="opentab('competitions')">Competitions and Awards</p>-->
+                            <p class="tab-links" onclick="opentab('fun-facts')">Fun Facts</p>
+                        </div>
+                        <div class="tab-contents active-tab" id="skills">
+                            <ul>
+                                <li><span>Programming Languages</span><br>Python, SQL, JavaScript, HTML/CSS, Data Structures and Algorithms</li>
+                                <li><span>Machine Learning & Deep Learning</span><br>PyTorch, TensorFlow, Keras</li>
+                                <li><span>Data & Visualization</span><br>Pandas, NumPy, Tableau, Power BI, Excel, Jupyter Notebooks</li>
+                                <li><span>Database & Data Manipulation</span><br>SQL, Hadoop, Spark</li>
+                                <li><span>Cloud Computing</span><br>Microsoft Azure, AWS</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="experience">
+                            <ul>
+                                <li><span>Compusol</span><br>Jr.Data Analyst (2022 – 2023)</li>
+                                <li><span>Synergina</span><br>Data Science Intern(2021)</li>
+                                <!--<li><span>Ramprasad Research Group</span><br>Research Assistant (2023 – 2024)</li>
+                                <li><span>Easy Day Sports</span><br>Marketing Coordinator and Analyst (2022 – 2023)</li>
+                                <li><span>ILINX LLC</span><br>Founder and CEO (2020 – 2022)</li>-->
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="education">
+                            <ul>
+                                <li><span>Pace University</span><br>M.S. in Computer Science (Jan 2023 – Dec 2024)</li>
+                                <li><span>Institute of Aeronautical Engineering</span><br>B.Tech in Electronics and Communication Engineering (June 2017 – Aug 2021)</li>
+                            </ul>
+                        </div>
+                        <!--<div class="tab-contents" id="competitions">
+                            <ul>
+                                <li><span>Georgia Research Alliance Student Scholarship</span>Nominated by a Georgia Tech professor and selected as one of ten STEM students statewide to receive funding for research in a lab on campus</li>
+                                <li><span>ATLytiCS Data for Hope™ Competition</span><br>Team Won Second Place; Prize of $2000 (2023)</li>
+                            </ul>-->
+                        </div>
+                        <div class="tab-contents" id="fun-facts">
+                            <ul>
+                                <li>• I firmly believe Spider-Man would use Python if he were a programmer – he’s great with webs, after all.</li>
+                                <li>• I once drank so much coffee that I wrote code in my sleep (it worked better than my awake version).</li>
+                                <li>• If Jurassic Park were real, I'd love to debug dino-tech!</li>
+                                <li>• I tried explaining Python to my grandma – now she thinks I’m training snakes to fetch data</li>
+                            </ul>
+                        </div>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+    <!-- -------------------expertise------------------- -->
+    <div id="expertise">
+        <div class="container">
+            <h1 class="sub-title">Expertise</h1>
+            <div class="expertise-list">
+                <div>
+                    <i class="fa-solid fa-laptop-code"></i>
+                    <h2>Machine Learning</h2>
+                    <p>Building advanced predictive models and neural networks to address complex problems across different industries.</p>
+                    <!-- <a href="#">Learn more</a> -->
+                </div>
+                <div>
+                    <i class="fa-solid fa-chart-line"></i>
+                    <h2>Data Analysis</h2>
+                    <p>Deriving insights through statistical modeling and data transformation.</p>
+                    <!-- <a href="#">Learn more</a> -->
+                </div>
+                <div>
+                    <i class="fa-solid fa-cloud"></i>
+                    <h2>Cloud Computing</h2>
+                    <p>Harnessing scalable cloud infrastructure to optimize data handling, storage, and teamwork across distributed systems.</p>
+                    <!-- <a href="#">Learn more</a> -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- -------------------portfolio------------------- -->
+        <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/graph.jpeg">
+                    <div class="layer">
+                        <h3>Turning Data into Dashboards</h3>
+                        <p>Every dashboard here reflects my expertise in data analysis, visualization, and storytelling through design.</p>
+                        <a href="dashboard.html" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/Final Team.jpeg">
+                    <div class="layer">
+                        <h3>TaskGenie: A Service Management Platform</h3>
+                        <p>A collaborative web application built by our team to connect service providers and customers, offering seamless booking, payments, and reviews.</p>
+                        <a href="https://github.com/ksamanthapudi/Task-Geniee" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/chatbot.jpg">
+                    <div class="layer">
+                        <h3>Hollywood Dialogues Chatbot</h3>
+                        <p>An interactive chatbot trained on the Cornell Movie-Dialogs Corpus to simulate movie-like dialogues.</p>
+                        <a href="chatbot.html" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <!--<div class="work">
+                    <img src="images/.jpg">
+                    <div class="layer">
+                        <h3>House Price Prediction</h3>
+                        <p>Predicting house prices based on various features using a Random Forest Regressor.</p>
+                        <a href="" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/todo_preview.png">
+                    <div class="layer">
+                        <h3>Task List Web Application</h3>
+                        <p>This interactive to-do list app built with HTML, CSS, and JavaScript, featuring local storage for task persistence and a clean, responsive design. Users can add, edit, and delete tasks, as well as mark them as completed with intuitive controls.</p>
+                        <a href="https://hilpresent.github.io/todo_list/todo_index.html" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>-->
+                </div>
+            </div>
+            <a id="see-more-btn" class="btn">See more</a>
+            <a id="collapse-btn" class="btn" style="display: none;">Collapse</a>
+        </div>
+    </div>
+
+    <!-- -------------------contact------------------- -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i><a class="contact-me" href="mailto:kavyasriconnects@gmail.com">kavyasriconnects@gmail.com</a></p>
+                    <!--<p><i class="fa-solid fa-phone"></i><a class="contact-me" href="tel:+16197867074">656.800.4555</a></p>-->
+                    <div class="social-icons">
+                        <!-- or <i class="fa-brands fa-linkedin-in"></i> -->
+                        <a href="https://github.com/ksamanthapudi"><i class="fa-brands fa-github"></i></a>
+                        <a href="https://www.linkedin.com/in/kavyasrii/"><i class="fa-brands fa-linkedin"></i></a>
+                        <!--<a href="https://www.facebook.com/profile.php?id=100006857775780"><i class="fa-brands fa-facebook"></i></a>-->
+                    </div>
+                    <a href="Kavya_samanthapudi_Resume .pdf" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <!--<input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                        <span id="msg"></span>-->
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>&copy; 2025 Kavya Samanthapudi. All rights reserved.</p>
+        </div>
+    </div>
+
+   <script src="script.js"></script>
+
+    </body>
+</html>

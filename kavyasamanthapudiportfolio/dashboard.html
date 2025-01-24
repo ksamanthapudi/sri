@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Dashboards</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to external styles -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <header class="bg-dark text-white text-center p-3">
+        <h1>My Dashboards</h1>
+        <p>Turning raw data into impactful stories—explore dashboards designed and developed entirely by me.</p>
+    </header>
+
+    <div class="container mt-4">
+        <!-- Tabs Navigation -->
+        <ul class="nav nav-tabs" id="dashboardTabs" role="tablist">
+            <li class="nav-item" role="presentation">
+                <button class="nav-link active" id="sales-tab" data-bs-toggle="tab" data-bs-target="#sales" type="button" role="tab">Sales Dashboard</button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link" id="hr-tab" data-bs-toggle="tab" data-bs-target="#hr-dashboard" type="button" role="tab">HR Dashboard</button>
+            </li>
+        </ul>
+
+        <!-- Tab Content -->
+        <div class="tab-content" id="dashboardContent">
+            <!-- Sales Dashboard -->
+            <div class="tab-pane fade show active" id="sales" role="tabpanel">
+                <h2 class="mt-4">Sales Dashboard</h2>
+                <p>The Sales Dashboard provides a comprehensive analysis of sales data, including the following visualizations:</p>
+
+                <!-- Sales Dashboard Image -->
+                <div class="images mb-4">
+                    <img src="images/sale.png" alt="Sales Dashboard Visualization" style="width: 100%; max-height: 500px; object-fit: contain;">
+                </div>
+
+                <!-- Explanation of Graphs -->
+                <div>
+                    <h4>Graph Descriptions</h4>
+                    <ul>
+                        <li><strong>Sum of Boxes Shipped by Sales Person:</strong> This bar chart displays the total number of boxes shipped by each sales representative, helping identify top performers.</li>
+                        <li><strong>Sum of Boxes Shipped by Country:</strong> This line chart illustrates the distribution of boxes shipped across different countries, showing which markets are most active.</li>
+                        <li><strong>Sum of Amount by Year, Quarter, Month, and Day:</strong> A bar chart breaking down revenue trends over various time intervals to highlight seasonality and growth patterns.</li>
+                        <li><strong>Sum of Amount by Year, Quarter, Month, Day, and Country:</strong> A waterfall chart showcasing revenue increases and decreases across regions and time periods.</li>
+                    </ul>
+                </div>
+
+                <!-- Dataset and Reports Section -->
+                <div class="mt-4">
+                    <h4>Dataset and Reports</h4>
+                    <p>You can download the dataset and detailed reports below:</p>
+                    <ul>
+                        <li><a href="sales report dataset.xlsx" download>Download Dataset (Excel File)</a></li>
+                        <li><a href="Sales Report 1.pbix" download>Download Power BI Report (PBIX File)</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- HR Dashboard -->
+            <div class="tab-pane fade" id="hr-dashboard" role="tabpanel">
+                <h2 class="mt-4">HR Dashboard</h2>
+                <p>The HR Dashboard provides a detailed overview of employee data and metrics, helping to analyze workforce trends and distributions effectively. Below are the key visualizations:</p>
+            
+                <!-- HR Dashboard Image -->
+                <div class="images mb-4">
+                    <img src="images/HR Dashboard by Excel.png" alt="HR Dashboard Visualization" style="width: 100%; max-height: 500px; object-fit: contain;">
+                </div>
+            
+                <!-- Explanation of Graphs -->
+                <div>
+                    <h4>Graph Descriptions</h4>
+                    <ul>
+                        <li><strong>Key Metrics Table:</strong> Displays essential employee data such as the total number of employees, average age, and salary statistics (minimum, maximum, and average). This provides a high-level summary of the workforce.</li>
+                        <li><strong>% of Employees by Gender:</strong> A pie chart showing the gender distribution of employees, with the percentage of male and female employees.</li>
+                        <li><strong>% of Employees by Status:</strong> A pie chart illustrating marital status distribution among employees, categorized into Married (M) and Single (S).</li>
+                        <li><strong>No. of Employees by Age:</strong> A bar chart that breaks down the number of employees into age brackets (25–34, 35–44, 45–54, and >55 years), helping visualize age distribution in the organization.</li>
+                        <li><strong>No. of Employees by Salary:</strong> A bar chart categorizing employees based on salary ranges (e.g., 0–999, 2000–2999, 3000–3999, and 4000–4999), providing insight into salary distribution.</li>
+                    </ul>
+                </div>
+            
+                <!-- Dataset and Reports Section -->
+                <div class="mt-4">
+                    <h4>Dataset and Reports</h4>
+                    <p>You can download the datasets and an additional reference image below:</p>
+                    <ul>
+                        <li><a href="Employee-Master.xlsx" download>Download Dashboard here (Excel File)</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+
+    <footer class="text-center mt-4 p-3 bg-light">
+        <p>&copy; 2025 KavyaSamanthapudi | Dashboards</p>
+    </footer>
+</body>
+</html>
