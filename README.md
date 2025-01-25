@@ -1,4 +1,4 @@
-# Personal Portfolio Website – Hilary Present
+# Personal Portfolio Website – Kavya Samanthapudi
 
 Welcome to the repository for my personal portfolio website, which showcases my work, skills, and experiences as a data scientist. This website is built with HTML, CSS, and JavaScript, and it leverages various web development techniques to create a responsive and interactive user experience.
 
